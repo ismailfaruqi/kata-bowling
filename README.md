@@ -31,13 +31,14 @@ We can briefly summarize the scoring for this form of bowling:
 
 More info on the rules at: www.topendsports.com/sport/tenpin/scoring.htm
 
-*** Suggested Test Cases ***
+**Input and Output**
 
-(When scoring "X" indicates a strike, "/" indicates a spare, "-" indicates a miss)
+(When scoring "X" indicates a strike, "/" indicates a spare, "-" indicates a miss, and [0-9] indicates pins knocked down)
 - "XXXXXXXXXXXX" (12 rolls: 12 strikes) = 10+10+10 + 10+10+10 + 10+10+10 + 10+10+10 + 10+10+10 + 10+10+10 + 10+10+10 + 10+10+10 + 10+10+10 + 10+10+10 = 300
 - "9-9-9-9-9-9-9-9-9-9-" (20 rolls: 10 pairs of 9 and miss) = 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 = 90
 - "5/5/5/5/5/5/5/5/5/5/5" (21 rolls: 10 pairs of 5 and spare, with a final 5) = 10+5 + 10+5 + 10+5 + 10+5 + 10+5 + 10+5 + 10+5 + 10+5 + 10+5 + 10+5 = 150
-
+- "0/5-XX0-5/X4-0/X05" (17 rolls, with finals 0 and 5) =  10+5 + 5 + 10+10+0 + 10+0+0 + 0 + 10+10 + 10+4+0 + 4+0 + 10+10 + 10+0+5 = 123
+    
 Installation
 ------------
 
